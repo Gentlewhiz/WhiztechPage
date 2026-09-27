@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odunsi Ibrahim, Frontend Developer | WhizTech</title>
+    <meta
+      name="description"
+      content="Odunsi Ibrahim is a frontend developer building responsive, accessible interfaces with React, JavaScript and Tailwind CSS. See his projects and get in touch."
+    />
+    <meta name="author" content="Odunsi Ibrahim" />
+    <meta name="theme-color" content="#0B0B0F" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F8FAFC" media="(prefers-color-scheme: light)" />
+    <meta name="color-scheme" content="dark light" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="WhizTech" />
+    <meta property="og:title" content="Odunsi Ibrahim, Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Responsive, accessible interfaces built with React, JavaScript and Tailwind CSS."
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Odunsi Ibrahim, Frontend Developer. WhizTech." />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <!-- Apply the saved or system theme before first paint to avoid a flash. -->
+    <script>
+      ;(function () {
+        var theme
+        try {
+          theme = localStorage.getItem('theme')
+        } catch (e) {}
+        if (theme !== 'light' && theme !== 'dark') {
+          theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+        }
+        document.documentElement.classList.toggle('dark', theme === 'dark')
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
