@@ -19,7 +19,7 @@ export const site = {
     github: 'https://github.com/Gentlewhiz',
     linkedin: 'https://www.linkedin.com/in/ayomide-odunsi-518bb931a',
     x: 'https://x.com/hsuperlizer',
-    whatsapp: 'https://wa.link/p269m9',
+    whatsapp: 'https://wa.link/7fgh2q',
   },
 }
 
